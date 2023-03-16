@@ -1,0 +1,11 @@
+{% include './components/header.html' %}
+
+<div class="container">
+    {% if success == "True" %}
+        <h1 class="display-5 text-center text-primary my-4">Login SUCCESS</h1>
+    {% else %}
+        <h1 class="display-5 text-center text-warning my-4">Login FAILED. Redirecting</h1>
+    {% endif %}
+</div>
+
+{% include './components/footer.html' %}
